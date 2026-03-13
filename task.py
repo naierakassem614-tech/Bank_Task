@@ -91,6 +91,7 @@ sns.histplot(df_imputed["age"], bins=20)
 plt.title("Histogram of Age")
 plt.xlabel("Age")
 plt.ylabel("Count")
+plt.savefig("age_histogram.png")
 plt.show()
 
 # 2. Boxplot of balance
@@ -98,6 +99,7 @@ plt.figure(figsize=(8,5))
 sns.boxplot(x=df_imputed["balance"])
 plt.title("Boxplot of Balance")
 plt.xlabel("Balance")
+
 plt.show()
 
 # 3. Distribution of duration
@@ -132,4 +134,5 @@ plt.title("Count Plot of Deposit vs Housing")
 plt.xlabel("Deposit")
 plt.ylabel("Count")
 plt.savefig("age_histogram.png")
+plt.savefig("deposit_count.png")
 plt.show()
